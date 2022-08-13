@@ -68,3 +68,18 @@ Here we look at 150 different vehicles which are assigned to one of 3 lots, all 
 
 While the overall variance, as shown in the Total Summary data above, is under 100 psi and meets specifications, there is a problem with one of the individual lots. As shown in the Lot Summary stats, the variance for Lot 3 is well over the acceptable threshold, at 170.28.
 
+## T-Tests on Suspension Coils
+### One-Sample T-Test on all vehicles
+<img src="images/SuspensionTest_all.png"/>
+
+### One-Sample T-Test on Lot 1 vehicles
+<img src="images/SuspensionTest_Lot1.png"/>
+
+### One-Sample T-Test on Lot 2 vehicles
+<img src="images/SuspensionTest_Lot2.png"/>
+
+### One-Sample T-Test on Lot 3 vehicles
+<img src="images/SuspensionTest_Lot3.png"/>
+
+### Summary of T-tests
+A t test on all the lots shows a p-value of over 0.05 which means we cannot reject the null hypothesis.  However, while Lots 1 and 2 were above our specification range (p-values < 0.05), Lot 3 had a p-value of 0.041 which does give us reason to have an alternative hypothesis about the vehicles in lot 3 having relationship in the lower average PSI, which would invite further scrutiny.
