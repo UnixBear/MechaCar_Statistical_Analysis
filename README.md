@@ -83,3 +83,19 @@ While the overall variance, as shown in the Total Summary data above, is under 1
 
 ### Summary of T-tests
 A t test on all the lots shows a p-value of over 0.05 which means we cannot reject the null hypothesis.  However, while Lots 1 and 2 were above our specification range (p-values < 0.05), Lot 3 had a p-value of 0.041 which does give us reason to have an alternative hypothesis about the vehicles in lot 3 having relationship in the lower average PSI, which would invite further scrutiny.
+
+## Study Design: MechCar vs Competition
+Questions we should answer if we want to have a grasp on commodity differences between MechCar and it's competition:
+
+    What metric or metrics are you going to test?
+    What is the null hypothesis or alternative hypothesis?
+    What statistical test would you use to test the hypothesis? And why?
+    What data is needed to run the statistical test?
+
+We would need to narrow down our metrics and a good place to start would be either fuel efficiencies (these are often price points that are very import to daily operations and part of any budgetary consideration) or carrying capacity (which are usually highly correllated with suspension coils as engineers after use one to inform the other).
+
+Our hyptheses would be:
+ - H₀: for the budget, it would be that the class of the car has no relevance to the fuel efficiency and the carrying capacity would be that carrying capacity among the class of car does is not predicted by manufacturer
+ - Hₐ: for the budget, it would be that fuel efficiency is partly dependent on the class of the car and likewise carrying capcity is predicted by the manufacturer
+
+The best test I would use would be a two sample t test since I would be drawing samples from many different data sets such as among different competitors.  Data needed would include fuel efficiency data with car class data from a general dataset and car class data paired with manufacturer data.
